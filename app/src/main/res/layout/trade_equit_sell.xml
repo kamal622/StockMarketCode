@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product :"/>
+    <CheckBox
+        android:id="@+id/cbCase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cash"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exchange :"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spExchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_spinner_border" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_drop_down_arrow" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Code :"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/etStockCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quntity"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/etQuntity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btSellNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell Now"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/btClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

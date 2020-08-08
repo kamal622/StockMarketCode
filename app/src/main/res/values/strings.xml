@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">StockMarketCode</string>
+
+    <string name="stock_market">stock market</string>
+    <string name="emaill">stockmarket@gmail.com</string>
+    <string name="buyers">buyers</string>
+    <string name="sellers">sellers</string>
+    <string name="today_stock_list">stock list</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="profile">Profile</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="trade">Trade</string>
+    <string name="report">Report</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+</resources>

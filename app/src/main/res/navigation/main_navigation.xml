@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/profile">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.kp.stockmarketcode.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        />
+    <!--tools:layout="@layout/fragment_profile"-->
+
+    <fragment
+        android:id="@+id/portfolio"
+        android:name="com.kp.stockmarketcode.ui.portfolio.PortfolioFragment"
+        android:label="@string/portfolio" />
+    <!--    tools:layout="@layout/fragment_portfolio"-->
+
+    <fragment
+        android:id="@+id/trade"
+        android:name="com.kp.stockmarketcode.ui.trade.TradeFragment"
+        android:label="@string/trade" />
+    <!--tools:layout="@layout/fragment_trade"-->
+
+    <fragment
+        android:id="@+id/report"
+        android:name="com.kp.stockmarketcode.ui.report.ReportFragment"
+        android:label="@string/report" />
+    <!--tools:layout="@layout/fragment_report"-->
+
+    <!--<fragment
+        android:id="@+id/logout"
+        android:name="com.kp.stockmarketcode.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />-->
+
+</navigation>
