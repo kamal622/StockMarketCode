@@ -1,11 +1,22 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><!--<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.kp.stockmarketcode.fragments.Profile.ProfileViewModel" />
+    </data>
+
+</layout>-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.kp.stockmarketcode.ui.profile.ProfileFragment">
+    tools:context=".fragments.Profile.ProfileFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/tvName"
                     android:layout_width="wrap_content"
@@ -44,6 +56,7 @@
                     android:text="name"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/tvEmail"
                     android:layout_width="wrap_content"
@@ -52,6 +65,7 @@
                     android:paddingBottom="10dp"
                     android:text="Email"
                     android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/tvPhoneNo"
                     android:layout_width="wrap_content"
@@ -70,21 +84,26 @@
 
         <TextView
             android:id="@+id/tvOpeningBalance"
+            style="@style/TitleText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_gravity="center"
             android:text="Opening balance"
             android:gravity="center"
-            android:layout_gravity="center"/>
+            android:layout_margin="10dp"
+            android:padding="10dp" />
+        <!--android:background="@color/gray"-->
 
         <TextView
             android:id="@+id/tvCurrentBalance"
+            style="@style/TitleText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_gravity="center"
             android:text="Current balance"
             android:gravity="center"
-            android:layout_gravity="center"/>
+            android:layout_margin="10dp"
+            android:padding="10dp" />
 
         <View
             android:id="@+id/divider3"
@@ -133,7 +152,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Edit Profile"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="20dp" />
 
     </LinearLayout>
 

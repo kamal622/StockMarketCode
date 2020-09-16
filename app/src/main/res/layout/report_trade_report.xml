@@ -32,19 +32,27 @@
 
     <TextView
         android:id="@+id/tvFomrDate"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select From Date:"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_spinner_border"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="@string/select_from_date" />
 
     <TextView
         android:id="@+id/tvToDate"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select To Date:" />
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_spinner_border"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="@string/select_to_date" />
 
     <Button
+        android:id="@+id/btSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"/>
@@ -52,6 +60,7 @@
     <!--Date/OrderValidDate Exch Stock Price Buy/Sell Qty. Status-->
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

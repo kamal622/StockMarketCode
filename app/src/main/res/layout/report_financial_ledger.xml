@@ -1,6 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><!--<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type=" " />
+
+        <variable
+            name="adapter"
+            type=" " />
+    </data>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -32,29 +42,37 @@
 
     <TextView
         android:id="@+id/tvFomrDate"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select From Date:"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_spinner_border"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="@string/select_from_date" />
 
     <TextView
         android:id="@+id/tvToDate"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select To Date:" />
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_spinner_border"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:text="@string/select_to_date" />
 
     <Button
+        android:id="@+id/btSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"/>
-
-    <!--ClientName FinancialLedger-->
-
-
+        android:text="Submit" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvList"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
 </LinearLayout>
+
+    <!--</layout>-->
+

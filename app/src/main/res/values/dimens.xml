@@ -9,4 +9,9 @@
     <dimen name="appbar_padding">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
 
+    <dimen name="dimen_8">8dp</dimen>
+
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+
 </resources>

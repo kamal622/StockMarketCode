@@ -1,68 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:scrollbars="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Type :" />
-
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <Spinner
-            android:id="@+id/spType"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spType"
+                style="@style/background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_spinner_border" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_drop_down_arrow" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvFomrDate"
+            style="@style/background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_spinner_border" />
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_spinner_border"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="@string/select_from_date" />
 
-        <ImageView
-            android:layout_width="10dp"
+        <TextView
+            android:id="@+id/tvToDate"
+            style="@style/background"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|center"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_drop_down_arrow" />
+            android:background="@drawable/ic_spinner_border"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="@string/select_to_date" />
 
-    </FrameLayout>
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/add" />
 
-    <TextView
-        android:id="@+id/tvFomrDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="Select From Date"
-        android:background="@drawable/ic_spinner_border"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"/>
+        <!--    <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="Filled box(default)">
 
-    <TextView
-        android:id="@+id/tvToDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Select To Date"
-        android:background="@drawable/ic_spinner_border"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/btAdd"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Add"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="6dp"/>
+            </com.google.android.material.textfield.TextInputLayout>-->
 
-    <!--Stock Price Qty. HoldingPosition-->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvList"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent" />
+        <!--Stock Price Qty. HoldingPosition-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
 

@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+
+<!--<resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
-    <!--<color name="colorPrimary">#DD8F29</color>
+    &lt;!&ndash;<color name="colorPrimary">#DD8F29</color>
     <color name="colorPrimaryDark">#976427</color>
-    <color name="colorAccent">#DD8F29</color>-->
+    <color name="colorAccent">#DD8F29</color>&ndash;&gt;
 
     <color name="white">#fff</color>
     <color name="gray">#9CA1A0A0</color>
     <color name="black">#000</color>
     <color name="grey">#9CA1A0A0</color>
     <color name="medium_grey">#9CA1A0A0</color>
+
+    <color name="colorStatusConnected">#43A047</color>
+    <color name="colorStatusNotConnected">#D32F2F</color>
+
+</resources>-->
+
+<resources>
+    <color name="colorPrimary">@android:color/white</color>
+    <color name="colorPrimaryDark">@android:color/black</color>
+    <color name="windowBackground">#F3F3F3</color>
+    <color name="colorAccent">#044B51</color>
+    <color name="statusBarColor">@android:color/white</color>
+
+    <color name="textColor">@android:color/black</color>
+    <color name="bulbColor">@android:color/black</color>
+    <color name="post_background">@android:color/white</color>
+
+    <color name="imageBackgroundTint">#C3C3C3</color>
+
+    <color name="colorStatusConnected">#43A047</color>
+    <color name="colorStatusNotConnected">#D32F2F</color>
+
+    <color name="white">#fff</color>
+    <color name="gray">#9CA1A0A0</color>
+    <color name="black">#000</color>
+    <color name="grey">#9CA1A0A0</color>
+    <color name="medium_grey">#9CA1A0A0</color>
+
+    <color name="cHead">#6200EE</color>
+
+    <color name="textBlack">@android:color/white</color>
 
 </resources>
