@@ -3,6 +3,7 @@
     package="com.kp.stockmarketcode">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".utils.MyApp"
         android:allowBackup="true"
@@ -11,28 +12,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-
+        <activity android:name=".activitys.Main2Activity"></activity>
         <activity
             android:name=".activitys.login.LoginActivity"
             android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activitys.registration.RegistrationActivity"
             android:theme="@style/AppTheme.Splash" />
-
         <activity
             android:name=".activitys.main.MainActivity"
             android:theme="@style/AppTheme.Splash" />
-
         <activity
             android:name=".activitys.editProfile.EditProfileActivity"
             android:theme="@style/AppTheme.Splash" />
-
     </application>
 
 </manifest>
